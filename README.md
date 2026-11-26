@@ -10,7 +10,7 @@
 
 App Factory 載入設定並註冊 Blueprints；路由依商品、會員與購物車拆分，資料由 MySQL 存取，頁面由 Jinja2 呈現。
 
-## 詳細文件
+## 架構與流程
 
 - [系統架構與模組責任](docs/architecture.md)
 - [購物與結帳流程](docs/workflow.md)
@@ -19,4 +19,4 @@ App Factory 載入設定並註冊 Blueprints；路由依商品、會員與購物
 
 先完成訂單持久化與交易內的價格／庫存確認，再為付款回呼加入簽章驗證、狀態檢查與冪等處理。
 
-English: A Flask e-commerce application with product browsing, authentication, session cart, and checkout preparation.
+**English:** A Flask e-commerce application with product browsing, authentication, session cart, and checkout preparation.
