@@ -1,13 +1,25 @@
-# 電商網站系統架構
+# 電商網站架構
 
-![系統架構圖](assets/architecture.svg)
+## 技術堆疊
 
-| 模組 | 程式責任 |
+Python 3.11、Flask 3、MySQL、Jinja2、Flask-SocketIO、OAuth、ECPay。
+
+## 元件分工
+
+| 元件 | 責任 |
 |---|---|
-| Flask App Factory | 載入設定、初始化擴充及註冊 Blueprint |
-| 商品 Blueprint | 商品分類、搜尋、分頁與 JSON 回應 |
-| Auth Blueprint | 會員登入與 OAuth 驗證路由 |
-| 購物車 Blueprint | Session 購物車、庫存查詢與結帳資料整理 |
+| App Factory | 載入設定、初始化擴充與註冊 Blueprint |
+| Blueprint | 商品、會員與購物車路由 |
 | Database helper | MySQL 查詢與更新 |
-| 外部整合 | ECPay、SMTP、Socket.IO |
 | Templates | Jinja2 頁面呈現 |
+| 外部整合 | OAuth、SMTP、ECPay、Socket.IO |
+
+```mermaid
+flowchart LR
+    Browser[瀏覽器] --> App[Flask App Factory]
+    App --> Routes[商品 / 會員 / 購物車 Blueprints]
+    Routes --> Database[MySQL]
+    App --> Templates[Jinja2 Templates]
+    Routes --> External[外部服務]
+    Templates --> Browser
+```

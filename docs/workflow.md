@@ -1,5 +1,11 @@
-# 電商購物與結帳流程
+# 購物與結帳流程
 
-![購物車與結帳流程圖](assets/workflow.svg)
+```mermaid
+flowchart LR
+    Browse[瀏覽商品] --> Cart[加入 Session 購物車]
+    Cart --> Login[登入與庫存檢查]
+    Login --> Checkout[整理結帳資料]
+    Checkout --> Page[顯示結帳確認頁]
+```
 
-程式目前涵蓋商品瀏覽、Session 購物車、登入檢查、價格與庫存查詢，以及結帳金額計算。`confirm_checkout` 回應頁存在；訂單寫入及扣庫存程式段落目前為註解。
+程式包含結帳確認頁；訂單寫入與扣庫存程式段落目前為註解。
