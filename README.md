@@ -6,7 +6,7 @@
 
 Python 3.11、Flask 3、MySQL、Jinja2、Flask-SocketIO、OAuth、ECPay。
 
-## 架構
+## 架構分工
 
 - **App Factory：** 載入設定、初始化擴充並註冊 Blueprint。
 - **Blueprint：** 依商品、會員與購物車拆分路由。
@@ -21,7 +21,3 @@ Python 3.11、Flask 3、MySQL、Jinja2、Flask-SocketIO、OAuth、ECPay。
 4. 整理結帳資料並顯示確認頁。
 
 **實作範圍：** 訂單寫入與扣庫存程式段落目前為註解。
-
-## English
-
-A Flask e-commerce application for product browsing, authentication, session cart, and checkout preparation.
