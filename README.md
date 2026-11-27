@@ -10,6 +10,12 @@ flowchart TB
     D --> E[ECPay 付款及回應]
 ```
 
-以 App Factory 初始化應用，透過 Blueprint 分組功能路由，並以資料存取工具處理 MySQL 操作。程式包含訂單建立及付款回應處理；付款後的庫存扣減尚未啟用。
+## 程式架構
+
+以 App Factory 初始化應用，透過 Blueprint 分組功能路由，並以資料存取工具處理 MySQL 操作。
+
+## 實作範圍
+
+程式包含訂單建立及付款回應處理；付款後的庫存扣減尚未啟用。
 
 **技術：**Python、Flask、MySQL、Jinja2、OAuth、ECPay、Docker、Gunicorn。
