@@ -20,6 +20,6 @@ flowchart TB
 
 **技術：**Python、Flask、MySQL、Jinja2、OAuth、ECPay、Docker、Gunicorn。
 
-## 程式碼審閱草稿
+## 程式分層
 
-[查看電商分層改造及目前範圍](review-draft/)
+[查看購物車與付款程式架構](review-draft/)
