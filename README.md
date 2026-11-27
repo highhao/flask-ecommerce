@@ -21,7 +21,3 @@ flowchart TB
 程式包含訂單建立及付款回應處理；付款後的庫存扣減尚未啟用。
 
 **技術：**Python、Flask、MySQL、Jinja2、OAuth、ECPay、Docker、Gunicorn。
-
-## 程式分層
-
-[查看購物車與付款程式架構](review-draft/)
